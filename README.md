@@ -1,4 +1,7 @@
 # Detecting_deceptive_feedback_using-_AI
+
+STRUCTURE
+
 |->model
    |---->fake_review_detector_model.pkl
    |---->tfidf_vectorizer.pkl
