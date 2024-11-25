@@ -3,13 +3,13 @@
 STRUCTURE
 
 |->model
-   |---->fake_review_detector_model.pkl
-   |---->tfidf_vectorizer.pkl
+|   |---->fake_review_detector_model.pkl
+|   |---->tfidf_vectorizer.pkl
 |->ststic
-   |--->css
-       |---->styles.css
-   |--->js
-       |---->script.js
+|   |--->css
+|       |---->styles.css
+|   |--->js
+|       |---->script.js
 |->templets
-    |----->index.html
+|   |----->index.html
 |->app.py
