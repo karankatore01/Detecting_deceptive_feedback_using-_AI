@@ -1,26 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fake Review Detector</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Fake Feedback Detector</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+        input, button { padding: 10px; margin: 10px; }
+    </style>
 </head>
 <body>
-    <div class="container mt-5">
-        <h1 class="text-center">Fake Review Detector</h1>
-        <form id="reviewForm">
-            <div class="form-group">
-                <label for="review">Enter your review text:</label>
-                <textarea class="form-control" id="review" name="review" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">Check Review</button>
-        </form>
-        <div id="result" class="mt-4 text-center">
-            <!-- Prediction result will be displayed here -->
-        </div>
-    </div>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <h1>Fake Feedback Detector</h1>
+    <form action="/predict" method="post">
+        <input type="text" name="feedback" placeholder="Enter feedback here" required>
+        <button type="submit">Check</button>
+    </form>
 </body>
 </html>
