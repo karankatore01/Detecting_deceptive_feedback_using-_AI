@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detecting Deceptive Feedback Using AI</title>
+    
+    <!-- Link to CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="fade-in">Detecting Deceptive Feedback Using AI</h1>
+        
+        <form id="reviewForm" class="fade-in">
+            <textarea id="review" placeholder="Enter your review..." required></textarea>
+            <button type="submit" class="btn">Analyze Review</button>
+        </form>
+
+        <div id="result" class="fade-in"></div> 
+    </div>
+
+    <!-- Link to JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
